@@ -133,7 +133,7 @@ I (26120) app: Connected with IP Address: 192.168.1.155
 | :--- | :--- |
 | **1. BLE Device Name ที่สแกนเจอ** | PROV_1D88 |
 | **2. Primary Service UUID (128-bit)** | 021a9004-0382-4aea-bff4-6b3f1c5adfb4 |
-| **3. Characteristic Endpoint ที่พบ (0x2901)** | 1. prov-session .<br/>2. prov-config <br/>3. prov-scan |
+| **3. Characteristic Endpoint ที่พบ (0x2901)** | 1. prov-session <br/>2. prov-config <br/>3. prov-scan |
 | **4. พฤติกรรมไฟ LED 2 (GPIO 4) ช่วงรอ vs ช่วงต่อ BLE** | ช่วงรอ: กระพริบช้าๆ <br/>ช่วงต่อ: ติดสว่างค้าง หรือกระพริบเร็วขึ้นเมื่อมีสมาร์ตโฟนเชื่อมต่อ |
 | **5. พฤติกรรมเมื่อต่อ Wi-Fi สำเร็จ** | มี (ปรากฏ Log wifi_prov_scheme_ble: BT memory released, BTDM memory released) |
 

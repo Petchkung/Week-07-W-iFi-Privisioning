@@ -115,13 +115,17 @@ I (26120) app: Connected with IP Address: 192.168.1.155
   - **Characteristic UUIDs** แต่ละตัว
   - **Descriptor 0x2901 (User Description)** ที่ผูกเข้ากับ Protocomm Endpoints (`prov-session`, `prov-config`, `prov-scan`, `proto-ver`, `custom-data`)
 
+<img width="960" height="336" alt="image" src="https://github.com/user-attachments/assets/d3656339-65ac-4a77-8173-bac875e24e8d" />
+
+
 ### ภารกิจที่ 2: ผังลำดับการคืนหน่วยความจำ Bluetooth (BLE Lifecycle & Memory Reclaim Flow)
 ให้นักศึกษาวาด Flowchart / Sequence แสดงว่า:
 1. การเชื่อมต่อ BLE ถูกตรวจพบผ่าน Event `PROTOCOMM_TRANSPORT_BLE_CONNECTED` (LED 2 กระพริบเร็ว 100ms)
 2. เมื่อเชื่อมต่อ Wi-Fi สำเร็จ (`WIFI_PROV_CRED_SUCCESS`) $\rightarrow$ เกิด Event `WIFI_PROV_END`
 3. Provisioning Manager สั่งเรียก `esp_bt_mem_release()` เพื่อปล่อย DRAM คืนสู่ระบบอย่างไร
 
-<img width="960" height="336" alt="image" src="https://github.com/user-attachments/assets/d3656339-65ac-4a77-8173-bac875e24e8d" />
+<img width="433" height="1000" alt="image" src="https://github.com/user-attachments/assets/2ae99557-537e-451b-b32f-da67cb54c118" />
+
 
 
 ---

@@ -141,6 +141,8 @@ wifi_prov_mgr_endpoint_register("custom-data", custom_prov_data_handler, NULL);
 3. จุดแยกทางเลือก (Branching):
    - หาก PoP ไม่ตรง $\rightarrow$ Trigger Event `PROTOCOMM_SECURITY_SESSION_CREDENTIALS_MISMATCH` และปฏิเสธการเชื่อมต่อ
    - หาก PoP ถูกต้อง $\rightarrow$ Trigger Event `PROTOCOMM_SECURITY_SESSION_SETUP_OK` และสร้าง AES Session Key สำเร็จ
+   
+<img width="750" height="960" alt="image" src="https://github.com/user-attachments/assets/495fca6e-1967-42b9-af5a-2e33f8fd44f1" />
 
 ### ภารกิจที่ 2: ผังการรับส่งข้อมูลผ่าน Custom Endpoint (Custom Data Handler Flow)
 ให้นักศึกษาวาด Sequence / Data Flow ของฟังก์ชัน `custom_prov_data_handler()`:
@@ -149,7 +151,7 @@ wifi_prov_mgr_endpoint_register("custom-data", custom_prov_data_handler, NULL);
 3. การจัดสรรหน่วยความจำแบบไดนามิกด้วย `strdup()` ให้กับ `*outbuf`
 4. ทำไมตัวแปร `*outbuf` จึงต้องจัดสรรใน Heap Memory (ทำไมจึงใช้ตัวแปร Local Static Array ธรรมดาไม่ได้)?
 
-<img width="750" height="960" alt="image" src="https://github.com/user-attachments/assets/495fca6e-1967-42b9-af5a-2e33f8fd44f1" />
+
 <img width="960" height="300" alt="image" src="https://github.com/user-attachments/assets/e305e691-6b81-4fd0-ad00-8f6065a881e0" />
 
 

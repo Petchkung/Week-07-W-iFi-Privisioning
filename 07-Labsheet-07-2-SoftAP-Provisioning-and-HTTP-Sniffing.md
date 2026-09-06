@@ -120,9 +120,10 @@ I (19850) app: Connected with IP Address: 192.168.1.150
   - `IP_EVENT_STA_GOT_IP`
 - สถานะจังหวะการกระพริบของ **LED 3 (GPIO 5)** และ **LED 1 (GPIO 2)** ในแต่ละช่วง
 
-```text
-[พื้นที่สำหรับแนบรูปภาพ Sequence Diagram ที่นักศึกษาเขียนขึ้นด้วย Draw.io / Mermaid / วาดมือ]
-```
+
+<img width="873" height="960" alt="image" src="https://github.com/user-attachments/assets/367d0c2a-0c9d-479e-a9d9-6d04c3a64673" />
+
+
 
 ---
 
@@ -134,8 +135,8 @@ I (19850) app: Connected with IP Address: 192.168.1.150
 | **2. รหัส PoP (Proof of Possession)** | abcd1234 |
 | **3. ข้อความใน QR Code Payload (JSON)** | {"ver":"v1","name":"PROV_AE1D88","pop":"abcd1234","security":2,"transport":"softap"} |
 | **4. พฤติกรรมไฟ LED 3 (GPIO 5) ช่วงรอ vs ช่วงส่งข้อมูล** | ช่วงรอ: ไฟติดสว่างค้าง รอการเชื่อมต่อ Client <br/>ช่วงส่ง: ไฟกระพริบสลับตามจังหวะรับส่งข้อมูล Session และสว่างค้างเมื่อเชื่อมต่อสำเร็จ |
-| **5. IP Address ที่ ESP32 ได้รับจาก Router** | 192.168.1.150 |
-| **6. เวลาที่ใช้ตั้งแต่เริ่มจนจบกระบวนการ (วินาที)** | 30 - 45 วินาที |
+| **5. IP Address ที่ ESP32 ได้รับจาก Router** | 10.154.32.172 |
+| **6. เวลาที่ใช้ตั้งแต่เริ่มจนจบกระบวนการ (วินาที)** | 115-120 วินาที |
 
 ---
 
